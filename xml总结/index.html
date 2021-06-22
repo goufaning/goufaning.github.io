@@ -1,0 +1,393 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>xml总结 | 蘑菇博客</title><meta name="keywords" content="xml"><meta name="author" content="Gou Faning,1031974286@qq.com"><meta name="copyright" content="Gou Faning"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="什么是xmlXML英文名字为：Extensible Markup Language ，是可扩展标记语言，是在HTML、SGML等的基础发展而来的语言，它很像HTML（超文本标记语言），但其设计宗旨是传输数据，而不是显示数据。 xml与html的区别    Html xml    可扩展性 不具有扩展性 可自行定义元素   作用 描述数据的性质和结构 包含和传输数据   语法要求 不区分大小写，可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="xml总结">
+<meta property="og:url" content="http://goufaning.com/xml%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="蘑菇博客">
+<meta property="og:description" content="什么是xmlXML英文名字为：Extensible Markup Language ，是可扩展标记语言，是在HTML、SGML等的基础发展而来的语言，它很像HTML（超文本标记语言），但其设计宗旨是传输数据，而不是显示数据。 xml与html的区别    Html xml    可扩展性 不具有扩展性 可自行定义元素   作用 描述数据的性质和结构 包含和传输数据   语法要求 不区分大小写，可以">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/mtci2.jpg">
+<meta property="article:published_time" content="2016-10-07T06:11:18.000Z">
+<meta property="article:modified_time" content="2020-03-08T09:00:07.000Z">
+<meta property="article:author" content="Gou Faning">
+<meta property="article:tag" content="xml">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/mtci2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://goufaning.com/xml%E6%80%BB%E7%BB%93/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'xml总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-03-08 17:00:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://goufn-1252944891.cos.ap-beijing.myqcloud.com/mtci2.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">蘑菇博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">xml总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2016-10-07T06:11:18.000Z" title="发表于 2016-10-07 14:11:18">2016-10-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-03-08T09:00:07.000Z" title="更新于 2020-03-08 17:00:07">2020-03-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/web/">web</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="xml总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="什么是xml"><a href="#什么是xml" class="headerlink" title="什么是xml"></a>什么是xml</h1><p>XML英文名字为：Extensible Markup Language ，是可扩展标记语言，是在HTML、SGML等的基础发展而来的语言，它很像HTML（超文本标记语言），但其设计宗旨是传输数据，而不是显示数据。</p>
+<h1 id="xml与html的区别"><a href="#xml与html的区别" class="headerlink" title="xml与html的区别"></a>xml与html的区别</h1><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Html</th>
+<th align="center">xml</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">可扩展性</td>
+<td align="center">不具有扩展性</td>
+<td align="center">可自行定义元素</td>
+</tr>
+<tr>
+<td align="center">作用</td>
+<td align="center">描述数据的性质和结构</td>
+<td align="center">包含和传输数据</td>
+</tr>
+<tr>
+<td align="center">语法要求</td>
+<td align="center">不区分大小写，可以有多个根元素，属性值的引号可用可不用，空格会自动过滤等</td>
+<td align="center">严格区分大小写，只能有一个根元素，属性值必须放到引号中，空格不会自动删除等</td>
+</tr>
+<tr>
+<td align="center">数据与格式</td>
+<td align="center">数据与格式在一起</td>
+<td align="center">数据与格式分离</td>
+</tr>
+</tbody></table>
+<p><strong>需要注意的是，XML不是HTML的升级，也不是HTML的替代产品。</strong></p>
+<h1 id="xml语法"><a href="#xml语法" class="headerlink" title="xml语法"></a>xml语法</h1><h2 id="文档声明"><a href="#文档声明" class="headerlink" title="文档声明"></a>文档声明</h2><p>在一个完整的XML文档中，必须包含一个XML文档声明，并且该声明必须是文档的第一行，前面不得包含任何其他内容或空白。XML文档声明的语法格式如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml 版本信息[编码信息][文档独立性信息]?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>版本申明</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot;?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>这是必选项。 尽管以后的 XML 版本可能会更改该数字，但是 1.0 是当前的版本。</p>
+<ol start="2">
+<li>文档编码声明</li>
+</ol>
+<p>编码声明标识用于表示文档中的字符的编码。 尽管 XML 分析器可以自动确定文档使用的是 UTF-8 还是 UTF-16 Unicode 编码，但是，在支持其他编码的文档中应使用此声明。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;gb2312&quot;?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>独立文档信息</li>
+</ol>
+<p>独立声明指示文档的内容是否依赖来自外部源的信息，例如外部文档类型定义 (DTD)。，如果文档依赖于外部文档，则设standalone=”no”来声明。默认情况下为no。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意</strong>：如果同时设置了encoding和standalone属性，standalone属性要位于encoding属性之后。</p>
+<h2 id="xml元素"><a href="#xml元素" class="headerlink" title="xml元素"></a>xml元素</h2><p>XML 元素指的是从（且包括）开始标签直到（且包括）结束标签的部分。<br>一个元素可以包含：</p>
+<ul>
+<li>其他元素</li>
+<li>文本</li>
+<li>属性</li>
+<li>或混合以上所有…</li>
+</ul>
+<h1 id="DTD约束"><a href="#DTD约束" class="headerlink" title="DTD约束"></a>DTD约束</h1><h2 id="xml约束"><a href="#xml约束" class="headerlink" title="xml约束"></a>xml约束</h2><p>在XML技术里，可以编写一个文档来约束一个XML文档的书写规范，这称之为XML约束。XML文档的约束可以规定该文档都有哪些标签，包括标签的属性等等，都可以在约束中进行规范编写。</p>
+<h3 id="DTD约束声明"><a href="#DTD约束声明" class="headerlink" title="DTD约束声明"></a>DTD约束声明</h3><p>DTD约束(Document Type Definition)，全称为文档类型定义。</p>
+<p>XML文件使用 DOCTYPE 声明语句来指明它所遵循的DTD文件，DOCTYPE声明语句有两种形式：</p>
+<p>1.当引用的文件在本地时，采用如下方式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE 文档根结点 <span class="meta-keyword">SYSTEM</span> <span class="meta-string">&quot;DTD文件的URL&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code>例如： &lt;!DOCTYPE 书架 SYSTEM “book.dtd”&gt;。在xml文件中手写一下。
+</code></pre>
+<p>2.当引用的文件是一个公共的文件时，采用如下方式： </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE 文档根结点 <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;DTD名称&quot;</span> <span class="meta-string">&quot;DTD文件的URL&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="DTD语法"><a href="#DTD语法" class="headerlink" title="DTD语法"></a>DTD语法</h2><h3 id="元素定义"><a href="#元素定义" class="headerlink" title="元素定义"></a>元素定义</h3><p>声明一个XML元素</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!ELEMENT 元素名称 元素类型&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>元素类型描述主要有如下几种：</p>
+<table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">描述</th>
+<th align="center">语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">任意类型</td>
+<td align="center">这种元素即可以是字符串，也可以是其他子元素</td>
+<td align="center"><!ELEMENT 元素名 ANY></td>
+</tr>
+<tr>
+<td align="center">字符串值</td>
+<td align="center">这种元素只能是字符串，不能包含其他子元素</td>
+<td align="center"><!ELEMENT 元素名 (#PCDATA)></td>
+</tr>
+<tr>
+<td align="center">空元素</td>
+<td align="center">这种元素只能为空元素，空元素前面有介绍</td>
+<td align="center"><!ELEMENT 元素名 EMPTY></td>
+</tr>
+<tr>
+<td align="center">包含子元素</td>
+<td align="center">元素中可以出现子元素</td>
+<td align="center"><!ELEMENT 父元素 (子元素)></td>
+</tr>
+<tr>
+<td align="center">混合类型</td>
+<td align="center">可以出现以上的类型</td>
+<td align="center"><!ELEMENT 父元素 (#PCDATA  子元素丨子元素丨子元素...)></td>
+</tr>
+</tbody></table>
+<p><strong>子元素</strong></p>
+<blockquote>
+<p> 1.定义有序的子元素：如果使用引文英文逗号（,）作为子元素之间的分隔符，则子元素之间必须遵守定义的顺序。<br> 2.定义互斥的子元素：互斥的子元素表名一系列子元素之间只能出现其中的一个，互斥的子元素用竖线（|）分隔.<br> 3.子元素出现的频率：<br> | 符号 | 表示频率                      |<br> | —- | —————————– |<br> | +   | 表明子元素可以出现1次或者多次 |<br> | *   | 表明子元素可以出现0次或者多次 |<br> | ?    | 表明子元素可以出现0次或者1次  |</p>
+</blockquote>
+<h3 id="属性定义"><a href="#属性定义" class="headerlink" title="属性定义"></a>属性定义</h3><p>xml文档中的标签属性需通过ATTLIST为其设置属性</p>
+<p>语法格式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!ATTLIST 元素名 </span></span><br><span class="line"><span class="meta">属性名1 属性值类型 设置说明</span></span><br><span class="line"><span class="meta">属性名2 属性值类型 设置说明</span></span><br><span class="line"><span class="meta">……</span></span><br><span class="line"><span class="meta">\&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>设置说明：</p>
+<table>
+<thead>
+<tr>
+<th>约束</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>#REQUIRED</td>
+<td>必须设置该属性</td>
+</tr>
+<tr>
+<td>#IMPLIED</td>
+<td>可以设置也可以不设置</td>
+</tr>
+<tr>
+<td>#FIXED</td>
+<td>该属性的值是固定的，定义时必须指定固定值</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>在 XML 中可以设置该值也可以不设置该属性值。若没设置则使用默认值。</td>
+</tr>
+</tbody></table>
+<p>常用属性值类型</p>
+<table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">CDATA</td>
+<td align="center">表示属性值为普通文本字符串</td>
+</tr>
+<tr>
+<td align="center">ENUMERATED</td>
+<td align="center">该属性值是一系列枚举值之一(en1丨en2丨en3)</td>
+</tr>
+<tr>
+<td align="center">ID</td>
+<td align="center">该属性值必须是有效的标示符，且该属性值可用于表示该元素，在XML中必须唯一</td>
+</tr>
+<tr>
+<td align="center">IDREF</td>
+<td align="center">该属性值必须引用自另一个已有的ID属性值</td>
+</tr>
+<tr>
+<td align="center">IDREFS</td>
+<td align="center">该属性值必须引用自多个已有的ID属性值，多个ID属性值之间用空格隔开</td>
+</tr>
+<tr>
+<td align="center">NMTOKEN</td>
+<td align="center">该属性值必须是一个合法的XML名称，它也指定了该属性值是字符串数据，但比CDATA具有更强的约束，它表明属性值只能由字母、数字、英文下划线、英文中划线、英文点号、英文冒号等组成</td>
+</tr>
+<tr>
+<td align="center">NMTOKENS</td>
+<td align="center">该属性值可以是多个NMTOKEN，过个NMTOKEN之间用空格隔开</td>
+</tr>
+<tr>
+<td align="center">NOTATION</td>
+<td align="center">该属性值是在DTD声明过的符号（NOTATION），这是个将要过期的规范看，避免使用</td>
+</tr>
+<tr>
+<td align="center">ENTITY</td>
+<td align="center">该属性值是一个外部实体，例如图片文件</td>
+</tr>
+<tr>
+<td align="center">ENTITIES</td>
+<td align="center">该属性值是多个外部实体，多个实体之间用空格隔开</td>
+</tr>
+<tr>
+<td align="center">例子：</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">language</span> (<span class="meta-keyword">codeLanguage</span>)*&gt;</span></span><br><span class="line"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">codeLanguage</span> (<span class="meta-keyword">Java</span> | C | <span class="meta-keyword">Python</span>)+&gt;</span></span><br><span class="line"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">Java</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span><br><span class="line"><span class="meta">&lt;!ELEMENT C (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span><br><span class="line"><span class="meta">&lt;!ELEMENT <span class="meta-keyword">Python</span> (<span class="meta-keyword">#PCDATA</span>)&gt;</span></span><br><span class="line"><span class="meta">&lt;!ATTLIST <span class="meta-keyword">Java</span> <span class="meta-keyword">type</span> (<span class="meta-keyword">JavaSE</span> | <span class="meta-keyword">JavaEE</span> | <span class="meta-keyword">JavaME</span>) <span class="meta-keyword">#REQUIRED</span>&gt;</span></span><br><span class="line"><span class="meta">&lt;!ATTLIST C <span class="meta-keyword">id</span> <span class="meta-keyword">ID</span> <span class="meta-keyword">#REQUIRED</span>&gt;</span></span><br><span class="line"><span class="meta">&lt;!ATTLIST <span class="meta-keyword">Python</span> <span class="meta-keyword">ref</span> <span class="meta-keyword">IDREF</span> <span class="meta-keyword">#IMPLIED</span>&gt;</span></span><br><span class="line"><span class="meta">&lt;!ATTLIST <span class="meta-keyword">Python</span> <span class="meta-keyword">refs</span> <span class="meta-keyword">IDREFS</span> <span class="meta-keyword">#IMPLIED</span>&gt;</span></span><br><span class="line"><span class="meta">&lt;!ATTLIST <span class="meta-keyword">codeLanguage</span> <span class="meta-keyword">author</span> <span class="meta-keyword">NMTOKEN</span> <span class="meta-keyword">#IMPLIED</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">language</span> <span class="meta-keyword">SYSTEM</span> <span class="meta-string">&quot;test.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">language</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">codeLanguage</span> <span class="attr">author</span>=<span class="string">&quot;xujianguo&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Java</span> <span class="attr">type</span>=<span class="string">&quot;JavaEE&quot;</span>&gt;</span></span><br><span class="line">            I am JavaEE</span><br><span class="line">        <span class="tag">&lt;/<span class="name">Java</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">C</span> <span class="attr">id</span>=<span class="string">&quot;c&quot;</span>&gt;</span></span><br><span class="line">            I am C</span><br><span class="line">        <span class="tag">&lt;/<span class="name">C</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">C</span> <span class="attr">id</span>=<span class="string">&quot;ccc&quot;</span>&gt;</span></span><br><span class="line">            I am C</span><br><span class="line">        <span class="tag">&lt;/<span class="name">C</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Python</span> <span class="attr">ref</span>=<span class="string">&quot;c&quot;</span>&gt;</span></span><br><span class="line">            I am Python</span><br><span class="line">        <span class="tag">&lt;/<span class="name">Python</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Python</span> <span class="attr">refs</span>=<span class="string">&quot;c ccc&quot;</span>&gt;</span></span><br><span class="line">            I am Python</span><br><span class="line">        <span class="tag">&lt;/<span class="name">Python</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">codeLanguage</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">language</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="实体定义"><a href="#实体定义" class="headerlink" title="实体定义"></a>实体定义</h3><p>实体用于为一段内容创建一个别名，以后在XML文档中就可以使用别名引用这段内容了。实体可分为两种类型：引用实体和参数实体。</p>
+<h3 id="引用实体"><a href="#引用实体" class="headerlink" title="引用实体"></a>引用实体</h3><p>引用实体定义格式有两种，如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!ENTITY 实体名 <span class="meta-string">&quot;实体值&quot;</span>&gt;</span></span><br><span class="line">!ENTITY 实体名 SYSTEM &quot;URI/URL&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>引用方式： <code>&实体名称</code></p>
+<p>例子：</p>
+<p>内部实体</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!ENTITY <span class="meta-keyword">writer</span> <span class="meta-string">&quot;Donald Duck.&quot;</span>&gt;</span></span><br><span class="line"><span class="meta">&lt;!ENTITY <span class="meta-keyword">copyright</span> <span class="meta-string">&quot;Copyright W3CSchool.cc&quot;</span>&gt;</span></span><br><span class="line">XML 实例：</span><br><span class="line"><span class="tag">&lt;<span class="name">author</span>&gt;</span><span class="symbol">&amp;writer;</span><span class="symbol">&amp;copyright;</span><span class="tag">&lt;/<span class="name">author</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>外部实体</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!ENTITY <span class="meta-keyword">writer</span> <span class="meta-keyword">SYSTEM</span> <span class="meta-string">&quot;http://www.w3cschool.cc/entities.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="meta">&lt;!ENTITY <span class="meta-keyword">copyright</span> <span class="meta-keyword">SYSTEM</span> <span class="meta-string">&quot;http://www.w3cschool.cc/entities.dtd&quot;</span>&gt;</span></span><br><span class="line">XML example:</span><br><span class="line"><span class="tag">&lt;<span class="name">author</span>&gt;</span><span class="symbol">&amp;writer;</span><span class="symbol">&amp;copyright;</span><span class="tag">&lt;/<span class="name">author</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>注意</strong>:一个实体由三部分构成: 一个和号 (&amp;), 一个实体名称, 以及一个分号 (;)</p>
+<h3 id="参数实体"><a href="#参数实体" class="headerlink" title="参数实体"></a>参数实体</h3><p>仅仅在DTD中使用的解析实体称为<strong>参数实体</strong>。它使我们能够简便地引用或修改DTD中常用的结构，我们只需维护一处代码。</p>
+<p>参数实体声明由以下几部分组成：<strong>ENTITY关键字、百分号、实体名和实体内容值</strong>，需注意他们之间各有个空格。</p>
+<p>语法格式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!ENTITY % 实体名 <span class="meta-string">&quot;实体内容&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>引用实体参数的方式是：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp; 实体名称</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:1031974286@qq.com">Gou Faning</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://goufaning.com/xml%E6%80%BB%E7%BB%93/">http://goufaning.com/xml%E6%80%BB%E7%BB%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://goufaning.com" target="_blank">蘑菇博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/xml/">xml</a></div><div class="post_share"><div class="social-share" data-image="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/mtci2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E9%98%9F%E5%88%97/"><img class="prev-cover" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/page6_cover.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">队列</div></div></a></div><div class="next-post pull-right"><a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/"><img class="next-cover" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/cwqg1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据结构-树</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Gou Faning</div><div class="author-info__description">一个收藏回忆与分享技术的地方！</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/goufaning" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1031974286@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFxml"><span class="toc-number">1.</span> <span class="toc-text">什么是xml</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#xml%E4%B8%8Ehtml%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.</span> <span class="toc-text">xml与html的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#xml%E8%AF%AD%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">xml语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E5%A3%B0%E6%98%8E"><span class="toc-number">3.1.</span> <span class="toc-text">文档声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xml%E5%85%83%E7%B4%A0"><span class="toc-number">3.2.</span> <span class="toc-text">xml元素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DTD%E7%BA%A6%E6%9D%9F"><span class="toc-number">4.</span> <span class="toc-text">DTD约束</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#xml%E7%BA%A6%E6%9D%9F"><span class="toc-number">4.1.</span> <span class="toc-text">xml约束</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DTD%E7%BA%A6%E6%9D%9F%E5%A3%B0%E6%98%8E"><span class="toc-number">4.1.1.</span> <span class="toc-text">DTD约束声明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DTD%E8%AF%AD%E6%B3%95"><span class="toc-number">4.2.</span> <span class="toc-text">DTD语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E5%AE%9A%E4%B9%89"><span class="toc-number">4.2.1.</span> <span class="toc-text">元素定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E5%AE%9A%E4%B9%89"><span class="toc-number">4.2.2.</span> <span class="toc-text">属性定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BD%93%E5%AE%9A%E4%B9%89"><span class="toc-number">4.2.3.</span> <span class="toc-text">实体定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%E5%AE%9E%E4%BD%93"><span class="toc-number">4.2.4.</span> <span class="toc-text">引用实体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E5%AE%9E%E4%BD%93"><span class="toc-number">4.2.5.</span> <span class="toc-text">参数实体</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Integer%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" title="Integer缓存机制"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Integer缓存机制"/></a><div class="content"><a class="title" href="/Integer%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" title="Integer缓存机制">Integer缓存机制</a><time datetime="2018-03-03T03:10:21.000Z" title="发表于 2018-03-03 11:10:21">2018-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" title="排序算法总结"><img src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/usltr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="排序算法总结"/></a><div class="content"><a class="title" href="/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" title="排序算法总结">排序算法总结</a><time datetime="2017-05-28T00:55:58.000Z" title="发表于 2017-05-28 08:55:58">2017-05-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/java%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3/" title="java抽象类与接口"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java抽象类与接口"/></a><div class="content"><a class="title" href="/java%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3/" title="java抽象类与接口">java抽象类与接口</a><time datetime="2017-05-09T11:54:43.000Z" title="发表于 2017-05-09 19:54:43">2017-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/" title="java三大特性"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java三大特性"/></a><div class="content"><a class="title" href="/java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/" title="java三大特性">java三大特性</a><time datetime="2017-05-09T02:21:26.000Z" title="发表于 2017-05-09 10:21:26">2017-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/B%E6%A0%91/" title="B树"><img src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/usltr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="B树"/></a><div class="content"><a class="title" href="/B%E6%A0%91/" title="B树">B树</a><time datetime="2017-04-28T00:55:58.000Z" title="发表于 2017-04-28 08:55:58">2017-04-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2021 By Gou Faning</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

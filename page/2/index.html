@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蘑菇博客 - 最痛苦的事，不是失败，而是我本可以</title><meta name="keywords" content="前端,js,jquery,javascript,html5,Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder"><meta name="author" content="Gou Faning,1031974286@qq.com"><meta name="copyright" content="Gou Faning"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一个收藏回忆与分享技术的地方！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="蘑菇博客">
+<meta property="og:url" content="http://goufaning.com/page/2/index.html">
+<meta property="og:site_name" content="蘑菇博客">
+<meta property="og:description" content="一个收藏回忆与分享技术的地方！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg">
+<meta property="article:author" content="Gou Faning">
+<meta property="article:tag" content="前端,js,jquery,javascript,html5,Java,开发者,程序猿,编程,代码,开源,IT网站,Developer,Programmer,Coder">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://goufaning.com/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '蘑菇博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-06-22 17:44:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://goufn-1252944891.cos.ap-beijing.myqcloud.com/top.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">蘑菇博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">蘑菇博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/goufaning" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1031974286@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/" title="数据结构-树">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/cwqg1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构-树"></a></div><div class="recent-post-info"><a class="article-title" href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91/" title="数据结构-树">数据结构-树</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-10-17T02:27:31.000Z" title="发表于 2016-10-17 10:27:31">2016-10-17</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">概述无论是链表，栈还是队列，它们都是线性结构的，每个结点的左边最多一个结点，右边也最多一个结点，对于大量的输入数据，线性表的访问时间太慢，不宜使用。这里我要说一种非线性的数据结构，其大部分操作的运行时间平均为O(logn)。我们涉及到的这种数据结构叫做树。
+树的概念树是一种递归定义的数据结构，是一种重要的非线性数据结构。树可以是一棵空树，它没有任何的结点；也可以是一棵非空树，至少含有一个结点。
+树具有以下特点：
+
+1.每个节点有零个或多个子节点。2.每个子节点只有一个父节点。3.没有父节点的节点称为根节点。
+
+
+子树（Subtree）：在一棵非空树中，除根外，其余所有结点可以分为m（m≥0）个互不相交的集合。每个集合本身又是一棵树，称为根的子树。
+结点的度（Degree）：一个结点拥有的子树数目称为该结点的度。
+叶子结点（Leaf）：度为0的结点。
+孩子（Child）：结点子树的根称为该结点的孩子。
+双亲（Parents）：孩子结点的上层结点叫该结点的双亲。
+兄弟（Sibling）：同一双亲的孩子。
+结点的层次（Level）：从根结点开始定义根为第一层，它的孩子为第二层，依此类推。
+深 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/xml%E6%80%BB%E7%BB%93/" title="xml总结">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/mtci2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xml总结"></a></div><div class="recent-post-info"><a class="article-title" href="/xml%E6%80%BB%E7%BB%93/" title="xml总结">xml总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-10-07T06:11:18.000Z" title="发表于 2016-10-07 14:11:18">2016-10-07</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/web/">web</a></span></div><div class="content">什么是xmlXML英文名字为：Extensible Markup Language ，是可扩展标记语言，是在HTML、SGML等的基础发展而来的语言，它很像HTML（超文本标记语言），但其设计宗旨是传输数据，而不是显示数据。
+xml与html的区别
+
+
+
+Html
+xml
+
+
+
+可扩展性
+不具有扩展性
+可自行定义元素
+
+
+作用
+描述数据的性质和结构
+包含和传输数据
+
+
+语法要求
+不区分大小写，可以有多个根元素，属性值的引号可用可不用，空格会自动过滤等
+严格区分大小写，只能有一个根元素，属性值必须放到引号中，空格不会自动删除等
+
+
+数据与格式
+数据与格式在一起
+数据与格式分离
+
+
+需要注意的是，XML不是HTML的升级，也不是HTML的替代产品。
+xml语法文档声明在一个完整的XML文档中，必须包含一个XML文档声明，并且该声明必须是文档的第一行，前面不得包含任何其他内容或空白。XML文档声明的语法格式如下：
+1&lt;?xml 版本信息[编码信息][文档独立性信息]?&gt;
+
+
+版本申明
+
+1&lt;?xml version=&quot;1.0&quot;?&gt;
+
+
+
+这是必选项 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/%E9%98%9F%E5%88%97/" title="队列">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/page6_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="队列"></a></div><div class="recent-post-info"><a class="article-title" href="/%E9%98%9F%E5%88%97/" title="队列">队列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-10-02T01:30:23.000Z" title="发表于 2016-10-02 09:30:23">2016-10-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">队列模型像栈一样，队列（queue）也是表。然而，使用队列时插入在一端进行而删除则在另一端进行，也就是先进先出（FIFO）。队列的基本操作是EnQueue（入队），它是在表的末端（叫做队尾（rear））插入一个元素；还有DeQueue（出队），它是删除（或返回）在表的开头（叫做队头（front））的元素。队列也是线性表，因此与线性表和链表类似，队列也有线性存储和链式存储两种存储方式。
+顺序队列顺序队列，即队列的顺序存储结构。由于队头和队尾的位置均发生变化，因此，在队列的顺序存储结构中，除了用一组地址连续的存储单元之外，还需设两个指针front和rear分别指向队头和队尾元素。顺序队列描述如下：
+12345#define MAXSIZE 100typedef struct &#123;  int data[];  int front,rear;&#125;
+
+注意：在此约定，在非空队列中，队头指针front始终指向队头元素，而队尾指针rear始终指向队尾元素的下一个位置。初始化空队列时，令front=rear=0，每添加一个元素，尾指针rear增加一，每删除一个元素，头指针front的值 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/%E6%A0%88/" title="栈">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/page5_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="栈"></a></div><div class="recent-post-info"><a class="article-title" href="/%E6%A0%88/" title="栈">栈</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-09-30T14:40:22.000Z" title="发表于 2016-09-30 22:40:22">2016-09-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">栈模型栈(stack)是限制插入和删除只能在一个位置上进行的表，该位置是表的末端，叫做栈顶(top)，栈又叫后进先出（LIFO）表。栈的基本操作有Push（进栈）和Pop（出栈），前者相当于插入，后者相当于删除最后插入的元素。
+1. 栈的示意图
+2.出栈
+3.入栈
+由于栈本质上是一个表，所以我们可以用任何实现表的方式实现栈，最常用的有两种，==数组==和==链表==。
+栈的链表实现我们可以通过在链表顶端插入来实现Push,通过删除顶端元素来实现Pop。而Top操作一般是返回顶端元素的值但并不删除。
+代码实现
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556#include&lt;stdio.h&gt;typedef struct stack&#123;    int data;    struct stack *next;&#125;*Stack,Node;/*创建一个空栈*/Stack CreateStack(void)&#12 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/%E7%BA%BF%E6%80%A7%E8%A1%A8%E4%B9%8B%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E5%92%8C%E5%8F%8C%E9%93%BE%E8%A1%A8/" title="线性表之循环链表和双链表">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/page4_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线性表之循环链表和双链表"></a></div><div class="recent-post-info"><a class="article-title" href="/%E7%BA%BF%E6%80%A7%E8%A1%A8%E4%B9%8B%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E5%92%8C%E5%8F%8C%E9%93%BE%E8%A1%A8/" title="线性表之循环链表和双链表">线性表之循环链表和双链表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-09-23T12:45:55.000Z" title="发表于 2016-09-23 20:45:55">2016-09-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">循环链表循环链表是另一种结构的链表，它的特点就是将链表的最后一个结点和头结点连接起来，整个链表形成一个环。这样，从链表的任意一个结点出发都可以找到其他所有结点。循环链表的运算和单链表基本相同，区别在于循环条件不再是p-&gt;next或p是否为空，而是他们是否等于头指针。
+在实际中，一般用一个尾指针代替头指针，这样访问第一个结点或者最后一个结点都会很方便。
+
+双链表有时候以倒叙扫描链表很方便。标准实现对此无能为力，然而解决的方法就是在结点中再添加一个域，使它包含一个指向前一个单元的指针即可。这样增加了空间的需求，同时使插入和删除的开销增加了一倍，另一方面，它简化了删除操作。
+
+双链表的基本操作1.结构体定义
+123456typedef struct DuLnode&#123;    int data;    struct DuLnode *prior;    struct DuLnode *next;&#125;DuLnode,*DuLinkList;
+
+2.创建一个有n个元素的双向链表
+123456789101112131415161718192021DuLinkList Creat ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/%E7%BA%BF%E6%80%A7%E8%A1%A8%E4%B9%8B%E5%8D%95%E9%93%BE%E8%A1%A8/" title="线性表之单链表">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/page3_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线性表之单链表"></a></div><div class="recent-post-info"><a class="article-title" href="/%E7%BA%BF%E6%80%A7%E8%A1%A8%E4%B9%8B%E5%8D%95%E9%93%BE%E8%A1%A8/" title="线性表之单链表">线性表之单链表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-09-23T12:31:16.000Z" title="发表于 2016-09-23 20:31:16">2016-09-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">链表的介绍顺序表的实现虽然很简单，但是需要对表的大小的最大值进行估计，通常需要估计的大一点，从而会浪费大量的空间，这有着很大的局限性。而且，对于顺序表，插入和删除的费用是昂贵的。例如，在位置0的插入，首先需要将整个顺序表后移一个位置，而删除第一个元素则需要将表中所有的元素前移一个位置。这是这两种操作的最坏情况，但是平均来看，这两种运算也许要移动一半的元素。因为这些缺点，所以我们一般不用顺序表来表示线性表这种数据结构。
+
+链表是由一系列不必在内存中相连的结构组成，每个结构均含有表元素和指向下一个单元的指针，我们称为next指针，最后一个单元的next指针指向NULL。链表有带头结点和不带头结点、循环和非循环、单向和双向之分。
+
+单链表单链表是线性表的一种最简单的链式存储结构。在单链表中，每一个结点都包含两部分：存放每一个元素本身信息的数据域和存放其直接后继存储位置的指针域。
+在学习单链表之前，我们需要先明白头结点和头指针的区别。我们把指向第一个结点的指针称为头指针，那么每次访问链表时都可以从这个头指针依次遍历链表中的每个元素。一个单链表可以由其头指针唯一确定，一般用其头指针来命名单链表。 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/%E7%BA%BF%E6%80%A7%E8%A1%A8%E4%B9%8B%E9%A1%BA%E5%BA%8F%E8%A1%A8/" title="线性表之顺序表">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/page2_cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线性表之顺序表"></a></div><div class="recent-post-info"><a class="article-title" href="/%E7%BA%BF%E6%80%A7%E8%A1%A8%E4%B9%8B%E9%A1%BA%E5%BA%8F%E8%A1%A8/" title="线性表之顺序表">线性表之顺序表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-08-20T03:31:16.000Z" title="发表于 2016-08-20 11:31:16">2016-08-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><div class="content">线性表的介绍线性表是一种常用的数据结构。在实际应用中，线性表都是以栈、队列、字符串、数组等特殊线性表的形式来使用的。特征：
+
+存在唯一的一个被称做“第一个”的数据元素；
+存在唯一的一个被称做“最后一个”的数据元素；
+除第一个之外，集合中的每个数据元素只有一个前驱；
+除最后一个外，集合中每个数据元素均只有一个后继
+
+顺序表（线性表的顺序表示）顺序表是在计算机内存中以数组的形式保存的线性表。（一般用数组表示）
+
+优点：支持随机查找 可以在O(1)内查找元素
+缺点：插入和和删除的时候，需要移动大量的元素
+适用于需要大量访问元素的 而少量增添/删除元素的程序
+
+顺序表的操作（C语言实现）结构体定义
+1234567// 顺序表的大小#define MAXSIZE 100typedef int ElementType;typedef struct &#123;    ElementType *data;    int length;&#125;sqlist;
+
+顺序表的空间初始化
+123456// 初始化线性表void init_list(sqlist *L)&#123;    L-&gt;dat ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/github+hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="github+hexo 搭建个人博客">     <img class="post_bg" src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/hexo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="github+hexo 搭建个人博客"></a></div><div class="recent-post-info"><a class="article-title" href="/github+hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="github+hexo 搭建个人博客">github+hexo 搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-07-23T03:42:28.000Z" title="发表于 2016-07-23 11:42:28">2016-07-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span></div><div class="content">如果版本不同，教程会有些出入，请留意
+
+
+
+写在最前一直想搭建一个个人博客，偶然发现github和Hexo可以比较简单的搭建一个免费的个人博客，而且网页非常漂亮。于是，上网参考了好多资料，终于搭建好了自己的个人博客。所以写这篇文章总结一下自己搭建博客的过程，也为想搭建个人博客的童鞋提供一点参考。
+为什么搭建博客？这个问题我相信每个人都有自己的想法，不过我还是推荐大家看看这篇文章：
+
+为什么你要写博客？
+
+为什么选择GithubPages和Hexo现在有那么多像CSDN、cnblog、新浪博客甚至QQ空间之类现成博客网站注册就可以使用，为什么我非要这么折腾呢？对于我来说，这样做最大的优点是这个博客是完全自由的，自己可以设计任意的主题，可以修改任何一个地方，并且可以绑定独立域名。另外，我非常喜欢markdown的写作方式，觉得它非常方便，非常便捷，非常优雅。当然，这些都只是工具，挑选自己喜欢的就可以了，博客中的文章才是最重要的。
+准备工作下面的软件，为必须要安装的软件
+
+
+Note.jsGitNode.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，简单的说  ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Gou Faning</div><div class="author-info__description">一个收藏回忆与分享技术的地方！</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/goufaning" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1031974286@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Integer%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" title="Integer缓存机制"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Integer缓存机制"/></a><div class="content"><a class="title" href="/Integer%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" title="Integer缓存机制">Integer缓存机制</a><time datetime="2018-03-03T03:10:21.000Z" title="发表于 2018-03-03 11:10:21">2018-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" title="排序算法总结"><img src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/usltr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="排序算法总结"/></a><div class="content"><a class="title" href="/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" title="排序算法总结">排序算法总结</a><time datetime="2017-05-28T00:55:58.000Z" title="发表于 2017-05-28 08:55:58">2017-05-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/java%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3/" title="java抽象类与接口"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java抽象类与接口"/></a><div class="content"><a class="title" href="/java%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3/" title="java抽象类与接口">java抽象类与接口</a><time datetime="2017-05-09T11:54:43.000Z" title="发表于 2017-05-09 19:54:43">2017-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/" title="java三大特性"><img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java三大特性"/></a><div class="content"><a class="title" href="/java%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/" title="java三大特性">java三大特性</a><time datetime="2017-05-09T02:21:26.000Z" title="发表于 2017-05-09 10:21:26">2017-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/B%E6%A0%91/" title="B树"><img src="https://goufn-1252944891.cos.ap-beijing.myqcloud.com/usltr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="B树"/></a><div class="content"><a class="title" href="/B%E6%A0%91/" title="B树">B树</a><time datetime="2017-04-28T00:55:58.000Z" title="发表于 2017-04-28 08:55:58">2017-04-28</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/"><span class="card-category-list-name">web</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="card-category-list-name">数据结构</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">算法</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size: 1.15em; color: rgb(96, 150, 148)">Hexo</a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.15em; color: rgb(152, 3, 133)">博客</a><a href="/tags/Java/" style="font-size: 1.15em; color: rgb(199, 107, 179)">Java</a><a href="/tags/java/" style="font-size: 1.3em; color: rgb(42, 123, 50)">java</a><a href="/tags/xml/" style="font-size: 1.15em; color: rgb(179, 125, 88)">xml</a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.45em; color: rgb(121, 173, 133)">数据结构</a><a href="/tags/c%E8%AF%AD%E8%A8%80/" style="font-size: 1.45em; color: rgb(109, 174, 18)">c语言</a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.15em; color: rgb(51, 50, 90)">算法</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/03/"><span class="card-archive-list-date">三月 2018</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/05/"><span class="card-archive-list-date">五月 2017</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/04/"><span class="card-archive-list-date">四月 2017</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/02/"><span class="card-archive-list-date">二月 2017</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/01/"><span class="card-archive-list-date">一月 2017</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/11/"><span class="card-archive-list-date">十一月 2016</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/10/"><span class="card-archive-list-date">十月 2016</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/09/"><span class="card-archive-list-date">九月 2016</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">18</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">31.1k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-06-22T09:44:17.206Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2021 By Gou Faning</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://api.btstu.cn/yan/api.php?charset=utf-8&encode=json')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        var sub = "".length == 0 ? new Array() : "".split(',')
+        var both = sub.unshift(data.text)
+        typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = data.text
+      }
+    })
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
